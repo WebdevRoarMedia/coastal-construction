@@ -39,7 +39,7 @@ Typography, color, footer, and scrollbar system used in `index.html` and `sitema
 
 ## Sitemap Branch Colors
 
-Seven branches, one color theme each (`c-red`, `c-orange`, `c-gold`, `c-green`, `c-teal`, `c-blue`, `c-navy`):
+Six branches, one color theme each (`c-red`, `c-orange`, `c-gold`, `c-green`, `c-teal`, `c-blue`):
 
 | Branch | Theme |
 |---|---|
@@ -49,7 +49,6 @@ Seven branches, one color theme each (`c-red`, `c-orange`, `c-gold`, `c-green`, 
 | Our Commitments | `c-green` |
 | Our People & Partners | `c-teal` |
 | Contact Us | `c-blue` |
-| Footer Utility | `c-navy` |
 
 ## Node Types
 

@@ -382,26 +382,6 @@
       background: #2364b0
     }
 
-    .c-navy .branch-head {
-      border-color: #1b2a41;
-      color: #1b2a41;
-      background: rgba(27, 42, 65, .06)
-    }
-
-    .c-navy .page-node {
-      border-color: #1b2a41;
-      color: #1b2a41
-    }
-
-    .c-navy .section-leaf::before {
-      background: #1b2a41
-    }
-
-    .c-navy .trunk,
-    .c-navy .sub-branch::before {
-      background: #1b2a41
-    }
-
     /* ── Legend ── */
     .legend {
       display: flex;
@@ -611,22 +591,6 @@
           </div>
         </div>
 
-        <!-- 7 · Footer Utility -->
-        <div class="branch c-navy" data-branch>
-          <div class="branch-head" data-head>Footer Utility</div>
-          <div class="branch-body">
-            <div class="main-stack">
-              <div class="trunk"></div>
-              <div class="page-node">Footer Utility Nav</div>
-              <div class="section-leaf">Locations</div>
-              <div class="section-leaf">Careers</div>
-              <div class="section-leaf">Subcontractor Prequalification</div>
-              <div class="section-leaf">Terms &amp; Conditions</div>
-              <div class="section-leaf">Social</div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
@@ -682,7 +646,6 @@
         if (cls.includes('c-green')) return '#5da87a';
         if (cls.includes('c-teal')) return '#4a9ea8';
         if (cls.includes('c-blue')) return '#2364b0';
-        if (cls.includes('c-navy')) return '#1b2a41';
         return '#1b2a41';
       }
 
