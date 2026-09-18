@@ -52,20 +52,28 @@
       border-radius: 16px;
       background: transparent;
       display: inline-flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: 14px;
+    }
+
+    .logo img {
+      width: 84px;
+      height: auto;
+      display: block;
     }
 
     .logo-mark {
       font-family: 'Newsreader', serif;
       font-weight: 500;
-      font-size: 30px;
+      font-size: 26px;
       letter-spacing: -.01em;
       color: #1b2a41;
     }
 
     .logo-mark span {
-      color: #3b5fa0;
+      color: #2364b0;
     }
 
     .title {
@@ -107,7 +115,7 @@
     }
 
     .chip:hover {
-      border-color: #3b5fa0;
+      border-color: #2364b0;
       box-shadow: 0 4px 16px rgba(27, 42, 65, .1);
       transform: translateY(-2px)
     }
@@ -146,11 +154,11 @@
     }
 
     .chip-sitemap .chip-icon {
-      background: rgba(59, 95, 160, .12)
+      background: rgba(35, 100, 176, .12)
     }
 
     .chip-sitemap .chip-icon svg {
-      stroke: #3b5fa0
+      stroke: #2364b0
     }
 
     .site-footer {
@@ -188,7 +196,10 @@
 <body>
   <div class="page-shell">
     <div class="hub">
-      <div class="logo"><span class="logo-mark">COASTAL <span>CONSTRUCTION</span></span></div>
+      <div class="logo">
+        <img src="./images/coastal-icon.png" alt="Coastal Construction">
+        <span class="logo-mark">COASTAL <span>CONSTRUCTION</span></span>
+      </div>
       <h1 class="title">Project Hub</h1>
       <p class="subtitle">Coastal Construction — deliverables</p>
 

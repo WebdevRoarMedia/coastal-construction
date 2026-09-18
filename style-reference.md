@@ -9,7 +9,8 @@ Typography, color, footer, and scrollbar system used in `index.html` and `sitema
 - Footer/socket text: `#1C1E2E`
 - Primary dark text: `#1B2A41`
 - Secondary muted text: `rgba(27, 42, 65, 0.5)`
-- Accent (tag / hover / active): `#3b5fa0`
+- Accent (tag / hover / active): `#2364b0` (brand blue, sampled from the logo)
+- Brand green (icon only, not used elsewhere in the UI): `#529636`
 - Sitemap scrollbar thumb: `#1C1E2E`
 - Sitemap scrollbar track: `rgba(28, 30, 46, 0.12)`
 
@@ -83,10 +84,13 @@ Same footer treatment across `index.html` and `sitemap.html`:
 .scroll-container { scrollbar-color: #1C1E2E rgba(28, 30, 46, 0.12); }
 ```
 
+## Logo Assets
+
+Derived from the client-supplied logo file (`Coastal Construction logo.webp`, white wordmark + color wave icon on transparent background):
+
+- `images/coastal-logo-full.png` — full lockup (icon + white wordmark). Only legible on a dark background, so it's used inside the sitemap's navy `.root-box` chip.
+- `images/coastal-icon.png` — icon cropped out on its own (color wave mark, no wordmark). Used in `index.html`'s hub, paired with a navy text wordmark, since the hub sits directly on the light page background.
+
 ## Source
 
 Content structure sourced from the client deck "Coastal Construction" (Google Slides, slide titled "Proposed Sitemap V2 — Future State").
-
-## Known gap
-
-No Coastal Construction logo asset was supplied yet — `index.html`'s hub logo and the sitemap's root node are currently a text wordmark. Swap in the real logo file under `images/` and update both `<div class="logo">` (index.html) and `.root-box` (sitemap.html) once available.

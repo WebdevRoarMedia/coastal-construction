@@ -75,7 +75,7 @@
       font-weight: 600;
       letter-spacing: .2em;
       text-transform: uppercase;
-      color: #3b5fa0
+      color: #2364b0
     }
 
     .sitemap-header h1 {
@@ -121,17 +121,16 @@
 
     .root-box {
       background: #1b2a41;
-      color: #fffdf9;
-      font-family: 'Newsreader', serif;
-      font-size: 20px;
-      font-weight: 500;
-      letter-spacing: .04em;
-      text-transform: uppercase;
-      padding: 14px 28px;
+      padding: 16px 24px;
       border-radius: 14px;
       text-align: center;
-      line-height: 1.2;
       box-shadow: 0 4px 16px rgba(27, 42, 65, .18)
+    }
+
+    .root-box img {
+      width: 100%;
+      max-width: 220px;
+      display: block;
     }
 
     .branches {
@@ -365,22 +364,22 @@
     }
 
     .c-blue .branch-head {
-      border-color: #5b82c7;
-      color: #3b5fa0
+      border-color: #2364b0;
+      color: #184a82
     }
 
     .c-blue .page-node {
-      border-color: #5b82c7;
-      color: #3b5fa0
+      border-color: #2364b0;
+      color: #184a82
     }
 
     .c-blue .section-leaf::before {
-      background: #5b82c7
+      background: #2364b0
     }
 
     .c-blue .trunk,
     .c-blue .sub-branch::before {
-      background: #5b82c7
+      background: #2364b0
     }
 
     .c-navy .branch-head {
@@ -485,9 +484,9 @@
     <h1>Visual Sitemap</h1>
     <p>Coastal Construction — Proposed Sitemap V2 (Future State)</p>
     <div class="legend">
-      <span class="legend-item"><span class="legend-swatch solid" style="border-color:#5b82c7"></span>Hub / Primary
+      <span class="legend-item"><span class="legend-swatch solid" style="border-color:#2364b0"></span>Hub / Primary
         page</span>
-      <span class="legend-item"><span class="legend-swatch dashed" style="border-color:#5b82c7"></span>Sub-page</span>
+      <span class="legend-item"><span class="legend-swatch dashed" style="border-color:#2364b0"></span>Sub-page</span>
       <span class="legend-item"><span class="legend-swatch filled"></span>Root</span>
     </div>
   </div>
@@ -498,7 +497,7 @@
 
       <!-- Root -->
       <div class="root" id="root">
-        <div class="root-box">Home</div>
+        <div class="root-box"><img src="./images/coastal-logo-full.png" alt="Coastal Construction Logo"></div>
       </div>
 
       <!-- Branches -->
@@ -682,7 +681,7 @@
         if (cls.includes('c-gold')) return '#c79a52';
         if (cls.includes('c-green')) return '#5da87a';
         if (cls.includes('c-teal')) return '#4a9ea8';
-        if (cls.includes('c-blue')) return '#5b82c7';
+        if (cls.includes('c-blue')) return '#2364b0';
         if (cls.includes('c-navy')) return '#1b2a41';
         return '#1b2a41';
       }
@@ -740,7 +739,7 @@
     }
 
     .back-btn:hover {
-      background: #3b5fa0
+      background: #2364b0
     }
   </style>
 </body>
