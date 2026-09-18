@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coastal Construction — Project Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400&family=Instrument+Serif:ital@0;1&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --page-bg: #F4F1EA;
+      --footer-bg: #DCD5C5;
+      --footer-text: #1C1E2E;
+      --footer-logo: #1C1E2E;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      background: var(--page-bg);
+      font-family: 'Hanken Grotesk', system-ui, sans-serif;
+      color: #1b2a41;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column
+    }
+
+    .page-shell {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 40px 24px
+    }
+
+    .hub {
+      text-align: center;
+      width: 100%;
+      max-width: 760px
+    }
+
+    .logo {
+      border-radius: 16px;
+      background: transparent;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    .logo img {
+      width: 84px;
+      height: auto;
+      display: block;
+    }
+
+    .logo-mark {
+      font-family: 'Newsreader', serif;
+      font-weight: 500;
+      font-size: 26px;
+      letter-spacing: -.01em;
+      color: #1b2a41;
+    }
+
+    .logo-mark span {
+      color: #2364b0;
+    }
+
+    .title {
+      font-family: 'Instrument Serif', serif;
+      font-weight: 400;
+      font-size: 36px;
+      letter-spacing: -.02em;
+      color: #1B2A41;
+      -webkit-text-stroke: 0.2px currentColor;
+      margin: 20px 0 6px
+    }
+
+    .subtitle {
+      font-family: 'Instrument Sans', system-ui, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(27, 42, 65, .5);
+      margin-bottom: 40px
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      background: #fffdf9;
+      border: 1.5px solid rgba(27, 42, 65, .14);
+      border-radius: 12px;
+      padding: 16px 24px;
+      transition: all .18s;
+      box-shadow: 0 1px 3px rgba(27, 42, 65, .04)
+    }
+
+    .chip:hover {
+      border-color: #2364b0;
+      box-shadow: 0 4px 16px rgba(27, 42, 65, .1);
+      transform: translateY(-2px)
+    }
+
+    .chip-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: none
+    }
+
+    .chip-icon svg {
+      width: 20px;
+      height: 20px
+    }
+
+    .chip-text {
+      text-align: left
+    }
+
+    .chip-label {
+      font-family: 'Instrument Sans', system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: #1b2a41
+    }
+
+    .chip-desc {
+      font-family: 'Instrument Sans', system-ui, sans-serif;
+      font-size: 12px;
+      color: rgba(27, 42, 65, .5);
+      margin-top: 3px
+    }
+
+    .chip-sitemap .chip-icon {
+      background: rgba(35, 100, 176, .12)
+    }
+
+    .chip-sitemap .chip-icon svg {
+      stroke: #2364b0
+    }
+
+    .site-footer {
+      width: 100%;
+      background: var(--footer-bg);
+      padding: 64px 24px 40px
+    }
+
+    .site-footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      text-align: center
+    }
+
+    .site-footer-logo {
+      width: 120px;
+      height: auto;
+      display: block
+    }
+
+    .site-footer-copy {
+      font-family: 'Instrument Sans', system-ui, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: 0;
+      color: var(--footer-text)
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-shell">
+    <div class="hub">
+      <div class="logo">
+        <img src="./images/coastal-icon.png" alt="Coastal Construction">
+        <span class="logo-mark">COASTAL <span>CONSTRUCTION</span></span>
+      </div>
+      <h1 class="title">Project Hub</h1>
+      <p class="subtitle">Coastal Construction — deliverables</p>
+
+      <div class="chips">
+        <a href="sitemap.html" class="chip chip-sitemap">
+          <div class="chip-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="4" r="2" />
+              <circle cx="5" cy="12" r="2" />
+              <circle cx="19" cy="12" r="2" />
+              <circle cx="5" cy="20" r="2" />
+              <circle cx="19" cy="20" r="2" />
+              <path d="M12 6v2l-7 4" />
+              <path d="M12 8l7 4" />
+              <path d="M5 14v4" />
+              <path d="M19 14v4" />
+            </svg>
+          </div>
+          <div class="chip-text">
+            <div class="chip-label">Visual Sitemap</div>
+            <div class="chip-desc">Tree view of all pages &amp; sections</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <img class="site-footer-logo" src="./images/rm-logo.svg" alt="Roar Media Logo">
+      <p class="site-footer-copy">2026 ROAR MEDIA · ALL RIGHTS RESERVED</p>
+    </div>
+  </footer>
+</body>
+
+</html>
