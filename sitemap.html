@@ -216,6 +216,18 @@
       padding-left: 16px
     }
 
+    .section-leaf.group-label {
+      margin-left: 18px;
+      font-size: 11px;
+      font-weight: 700;
+      color: rgba(27, 42, 65, .72);
+      padding-left: 0
+    }
+
+    .section-leaf.group-label::before {
+      content: none
+    }
+
     .section-leaf::before {
       content: '';
       position: absolute;
@@ -491,7 +503,7 @@
               <div class="trunk"></div>
               <div class="page-node">Our Portfolio / Projects Page</div>
               <div class="section-leaf">Mkts/Where We Are — Tabber</div>
-              <div class="section-leaf sub-item">Market Region or City Map &amp; Overview</div>
+              <div class="section-leaf group-label">Market Region or City Map &amp; Overview</div>
               <div class="section-leaf sub-item">North FL</div>
               <div class="section-leaf sub-item">South FL</div>
               <div class="section-leaf sub-item">Central FL</div>
@@ -522,7 +534,7 @@
               <div class="section-leaf">Mission Statement &amp; Core Values</div>
               <div class="section-leaf">What We Do</div>
               <div class="section-leaf">Where We Are — Tabber</div>
-              <div class="section-leaf sub-item">Market Region or City Map &amp; Overview</div>
+              <div class="section-leaf group-label">Market Region or City Map &amp; Overview</div>
               <div class="section-leaf sub-item">North FL</div>
               <div class="section-leaf sub-item">South FL</div>
               <div class="section-leaf sub-item">Central FL</div>
