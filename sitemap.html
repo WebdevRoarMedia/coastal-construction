@@ -257,6 +257,16 @@
       align-items: flex-start
     }
 
+    /* Opt-in dash connector for a single sub-page, lined up with the leaf dashes */
+    .sub-branch.with-dash::before {
+      content: '';
+      position: absolute;
+      left: -14px;
+      top: 50%;
+      width: 12px;
+      height: 1.5px
+    }
+
     .external-note {
       margin-top: 8px;
       padding: 10px 12px;
@@ -514,7 +524,7 @@
               <div class="section-leaf sub-item">Southwest FL</div>
               <div class="section-leaf sub-item">Central FL</div>
               <div class="section-leaf sub-item">North FL</div>
-              <div class="sub-branch">
+              <div class="sub-branch with-dash">
                 <div class="page-node sub-page">Coastal Homes &amp; Interiors</div>
               </div>
               <div class="section-leaf">Featured Case Studies + Testimonials</div>
