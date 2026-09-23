@@ -257,6 +257,16 @@
       align-items: flex-start
     }
 
+    /* Opt-in dash connector for a single sub-page, lined up with the leaf dashes */
+    .sub-branch.with-dash::before {
+      content: '';
+      position: absolute;
+      left: -14px;
+      top: 50%;
+      width: 12px;
+      height: 1.5px
+    }
+
     .external-note {
       margin-top: 8px;
       padding: 10px 12px;
@@ -509,13 +519,14 @@
               <div class="section-leaf sub-item">Education</div>
               <div class="section-leaf sub-item">Commercial / Office / Mixed Use</div>
               <div class="section-leaf sub-item">Under Construction</div>
-              <div class="section-leaf sub-item">Homes &amp; Interiors</div>
-              <div class="section-leaf">Regions Tabber</div>
-              <div class="section-leaf group-label">Regions Tabber</div>
+              <div class="section-leaf">Where We Are (Regions) — Tabber</div>
               <div class="section-leaf sub-item">South FL</div>
               <div class="section-leaf sub-item">Southwest FL</div>
               <div class="section-leaf sub-item">Central FL</div>
               <div class="section-leaf sub-item">North FL</div>
+              <div class="sub-branch with-dash">
+                <div class="page-node sub-page">Coastal Homes &amp; Interiors</div>
+              </div>
               <div class="section-leaf">Featured Case Studies + Testimonials</div>
               <div class="section-leaf">Contact Banner</div>
             </div>
@@ -530,12 +541,13 @@
               <div class="trunk"></div>
               <div class="page-node">Who We Are Page</div>
               <div class="section-leaf">Intro + Video</div>
-              <div class="section-leaf">Mission Statement &amp; Core Values</div>
-              <div class="section-leaf">What We Do</div>
-              <div class="section-leaf">Where We Are — Tabber</div>
-              <div class="section-leaf group-label">Regions Tabber</div>
-              <div class="section-leaf sub-item">South FL</div>
-              <div class="section-leaf sub-item">Southwest FL</div>
+              <div class="section-leaf">Data Vis of Key Stats</div>
+              <div class="section-leaf">Mission or Public-Facing Vision</div>
+              <div class="section-leaf">Leadership Bios</div>
+              <div class="section-leaf">Core Values</div>
+              <div class="section-leaf">Where We Are (Regions) — Tabber</div>
+              <div class="section-leaf sub-item">South FL Overview + Key Project List &amp; Regional Lead</div>
+              <div class="section-leaf sub-item">Southwest FL Overview + Key Project List &amp; Regional Lead</div>
               <div class="section-leaf sub-item">Central FL</div>
               <div class="section-leaf sub-item">North FL</div>
               <div class="sub-branch">
@@ -556,18 +568,26 @@
               <div class="page-node">What We Do Page</div>
               <div class="section-leaf">Our Services — Tabber</div>
               <div class="section-leaf sub-item">Planning/Intelligence</div>
-              <div class="section-leaf sub-item">Preconstruction</div>
+              <div class="section-leaf sub-item">Preconstruction (with link to subcontractor page)</div>
               <div class="section-leaf sub-item">Design-Build</div>
               <div class="section-leaf sub-item">Ops &amp; Maintenance</div>
               <div class="section-leaf sub-item">Logistics / Lean</div>
               <div class="section-leaf sub-item">Warranty / Maintenance</div>
+              <div class="section-leaf">Safety &amp; Quality Commitment Callout</div>
               <div class="section-leaf">Coastal Way Approach — Tabber</div>
               <div class="section-leaf sub-item">Build Relationships</div>
               <div class="section-leaf sub-item">Empower People</div>
               <div class="section-leaf sub-item">Exceptional Quality</div>
               <div class="section-leaf sub-item">Find Solutions</div>
-              <div class="section-leaf">Novel/Pioneering Approaches (Training / Female Focus / Paired Teams)</div>
-              <div class="section-leaf">Product Innovations (Renco, Togal, Sustainability)</div>
+              <div class="section-leaf">Pioneering Approaches</div>
+              <div class="section-leaf sub-item">Paired Teams</div>
+              <div class="section-leaf sub-item">Female Representation</div>
+              <div class="section-leaf sub-item">Coastal Training Institute</div>
+              <div class="section-leaf">Product Innovations</div>
+              <div class="section-leaf sub-item">Togal AI</div>
+              <div class="section-leaf sub-item">Renco</div>
+              <div class="section-leaf sub-item">Code Comply AI</div>
+              <div class="section-leaf sub-item">Sustainability Focus</div>
               <div class="section-leaf">Contact Banner</div>
             </div>
           </div>
@@ -581,7 +601,7 @@
               <div class="trunk"></div>
               <div class="page-node">Commitments Page</div>
               <div class="section-leaf">Commitment Statement</div>
-              <div class="section-leaf">Safety &amp; Awards (Video / Video)</div>
+              <div class="section-leaf">Safety Intro + Video</div>
               <div class="section-leaf">Quality (QA/QC)</div>
               <div class="section-leaf">Guiding Principles — Tabber</div>
               <div class="section-leaf sub-item">Culture</div>
@@ -604,14 +624,16 @@
               <div class="trunk"></div>
               <div class="page-node">People &amp; Partners Page</div>
               <div class="section-leaf">Intro</div>
-              <div class="section-leaf">People — Tabber</div>
+              <div class="section-leaf">People &amp; Culture — Tabber</div>
               <div class="section-leaf sub-item">Leadership Team</div>
               <div class="section-leaf sub-item">Life at Coastal (Culture / Employee Voices)</div>
               <div class="section-leaf sub-item">Coastal Training Institute</div>
               <div class="section-leaf sub-item">Join Us: Careers</div>
-              <div class="section-leaf">Partner — Tabber</div>
-              <div class="section-leaf sub-item">Do Business With Us: Subcontractors, Suppliers, Vendors, Prequalification</div>
-              <div class="section-leaf sub-item">Collaborate With Us: Architects, Interior Designers, Design Consultants</div>
+              <div class="section-leaf">Partner Section</div>
+              <div class="sub-branch">
+                <div class="page-node sub-page">Do Business With Us: Subcontractors, Suppliers, Vendors, Prequalification</div>
+                <div class="page-node sub-page">Collaborate With Us: Architects, Interior Designers, Design Consultants</div>
+              </div>
             </div>
           </div>
         </div>
