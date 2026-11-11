@@ -289,6 +289,12 @@
       gap: 26px
     }
 
+    /* Branch head centered over its columns (Our Company), like the deck */
+    .branch.centered-head .branch-head {
+      align-self: center;
+      margin-left: 0
+    }
+
     /* Utility nav: several small branches stacked in one column */
     .branch.utility .branch-head {
       border-style: dashed
@@ -598,7 +604,7 @@
             <div class="main-stack">
               <div class="trunk"></div>
               <div class="page-node">Expertise Page</div>
-              <div class="section-leaf">Intro: The Coastal Way Pillars (‘How we Think’ )</div>
+              <div class="section-leaf">Intro: The Coastal Way Pillars (‘How we Think’)</div>
               <div class="section-leaf sub-item">Build Relationships</div>
               <div class="section-leaf sub-item">Empower People</div>
               <div class="section-leaf sub-item">Exceptional Quality</div>
@@ -616,7 +622,7 @@
         </div>
 
         <!-- 3 · Our Company (four pages, two columns) -->
-        <div class="branch c-red" data-branch>
+        <div class="branch c-red centered-head" data-branch>
           <div class="branch-head" data-head>Our Company</div>
           <div class="branch-body columns">
             <div class="page-column">
